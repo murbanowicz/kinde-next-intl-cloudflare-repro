@@ -4,7 +4,7 @@
  */
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
-	"name": "my-next-app",
+	"name": "kinde-intl-repro",
 	"main": ".open-next/worker.js",
 	"compatibility_date": "2025-03-01",
 	"compatibility_flags": [
@@ -16,20 +16,25 @@
 	},
 	"observability": {
 		"enabled": true
+	},
+	"vars": {
+		"KINDE_CLIENT_ID": "e97782030e5e408ab16154a603e57d79",
+		"KINDE_ISSUER_URL": "https://issuesrepro.kinde.com",
+		"KINDE_SITE_URL": "https://kinde-intl-repro.marek-0e9.workers.dev",
+		"KINDE_POST_LOGOUT_REDIRECT_URL": "https://kinde-intl-repro.marek-0e9.workers.dev",
+		"KINDE_POST_LOGIN_REDIRECT_URL": "hhttps://kinde-intl-repro.marek-0e9.workers.dev"
 	}
 	/**
 	 * Smart Placement
 	 * Docs: https://developers.cloudflare.com/workers/configuration/smart-placement/#smart-placement
 	 */
 	// "placement": { "mode": "smart" },
-
 	/**
 	 * Bindings
 	 * Bindings allow your Worker to interact with resources on the Cloudflare Developer Platform, including
 	 * databases, object storage, AI inference, real-time communication and more.
 	 * https://developers.cloudflare.com/workers/runtime-apis/bindings/
 	 */
-
 	/**
 	 * Environment Variables
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#environment-variables
@@ -39,13 +44,11 @@
 	 * Note: Use secrets to store sensitive data.
 	 * https://developers.cloudflare.com/workers/configuration/secrets/
 	 */
-
 	/**
 	 * Static Assets
 	 * https://developers.cloudflare.com/workers/static-assets/binding/
 	 */
 	// "assets": { "directory": "./public/", "binding": "ASSETS" },
-
 	/**
 	 * Service Bindings (communicate between multiple Workers)
 	 * https://developers.cloudflare.com/workers/wrangler/configuration/#service-bindings
