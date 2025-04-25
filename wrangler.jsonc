@@ -15,14 +15,17 @@
 		"directory": ".open-next/assets"
 	},
 	"observability": {
-		"enabled": true
+		"enabled": true,
+		"head_sampling_rate": 1
 	},
 	"vars": {
 		"KINDE_CLIENT_ID": "e97782030e5e408ab16154a603e57d79",
 		"KINDE_ISSUER_URL": "https://issuesrepro.kinde.com",
 		"KINDE_SITE_URL": "https://kinde-intl-repro.marek-0e9.workers.dev",
 		"KINDE_POST_LOGOUT_REDIRECT_URL": "https://kinde-intl-repro.marek-0e9.workers.dev",
-		"KINDE_POST_LOGIN_REDIRECT_URL": "hhttps://kinde-intl-repro.marek-0e9.workers.dev"
+		"KINDE_POST_LOGIN_REDIRECT_URL": "https://kinde-intl-repro.marek-0e9.workers.dev",
+		"KINDE_CLIENT_SECRET": "OxJyRcXrvDshlhiHFjUvec5ZKZ38xdPkKb1uRckfXTWqvEEPta6",
+		"NEXT_BASE_URL": "https://kinde-intl-repro.marek-0e9.workers.dev"
 	}
 	/**
 	 * Smart Placement

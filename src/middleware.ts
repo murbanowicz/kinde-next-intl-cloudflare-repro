@@ -21,6 +21,7 @@ const authMiddleware = withAuth(
 );
 
 export default async function middleware(req: NextRequest) {
+  return NextResponse.next();
   const result = await (
     authMiddleware as unknown as (req: NextRequest) => Promise<NextResponse>
   )(req);
